@@ -3,6 +3,7 @@ import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
 import FirstSection from '../components/firstSection.astro';
 import SecondSection from '../components/secondSection.astro';
+import BtnCv from '../components/btnCv.astro';
 ---
 
 <Layout title="Patricio Muñoz">
@@ -10,11 +11,10 @@ import SecondSection from '../components/secondSection.astro';
 
     <FirstSection title='Patricio'></FirstSection>
     <SecondSection></SecondSection>
-    <Card
-    href="https://docs.astro.build/"
-    title="Documentation"
-    body="Learn how Astro works and explore the official API docs."
-  />
+    <BtnCv></BtnCv>
+    <hr class="m-10">
+    <p class="font-extrabold text-4xl mt-10 md:mt-4">
+      <span class="text-yellow-400">#</span>Experiencia</p>
 <!-- 		<ul role="list" class="link-card-grid">
 			<Card
 				href="https://docs.astro.build/"
@@ -29,7 +29,7 @@ import SecondSection from '../components/secondSection.astro';
 	main {
 		margin: auto;
 		padding: 1rem;
-		width: 900px;
+		width: 1000px;
 		max-width: calc(100% - 2rem);
 		color: white;
 		font-size: 20px;

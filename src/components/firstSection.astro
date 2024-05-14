@@ -1,47 +1,27 @@
 ---
 import { Icon } from 'astro-icon/components';
+import BtnSocialNet from './btnSocialNet.astro';
 interface Props {
 	title: string;
 }
  const { title } = Astro.props;
 ---
 
-<div class="max-w-md mx-auto mt-3">
-  <div class="md:flex justify-center items-center"> <!-- Agrega "items-center" para centrar verticalmente en dispositivos móviles -->
+<div class="max-w-lg mx-auto mt-3">
+  <div class="md:flex justify-center items-center"> 
 
-    <img class="rounded-full w-60 md:w-40 mx-auto" src="https://avatars.githubusercontent.com/u/44737010?v=4" alt="Imagen de perfil"> <!-- Agrega "mx-auto" para centrar horizontalmente -->
+    <img class="rounded-full w-60 md:w-40 mx-auto" src="https://avatars.githubusercontent.com/u/44737010?v=4" alt="Imagen de perfil">
 
     <div class="ml-4">
-      <h1 class="p-5 items-center text-center">Hola, mi nombre es 
+      <h1 class="p-2 items-center">Hola 👋 mi nombre es 
         <span class="font-bold">{title}</span> 
-        y soy un <span class="font-bold text-yellow-300">Frontend Web Dev.</span>
+        y actualmente me desempeño como 
+        <span class="font-bold text-yellow-300">Frontend Web Developer.</span>
       </h1>
+      <BtnSocialNet></BtnSocialNet>
     </div>
   </div>
 </div>
 
 
-<div class="max-w-md mx-auto place-items-center mt-3 md:flex">
 
-  <div class="md:flex">
-
-    <div class="flex place-content-center p-2">
-      <a href="https://www.linkedin.com/in/patricio-nicol%C3%A1s-mu%C3%B1oz-alveal/" target="_blank">
-        <Icon name="mdi:linkedin" size={40}/>
-      </a>
-      <a href="https://github.com/Patriciomual" target="_blank">
-        <Icon name="mdi:github" size={40}/>
-      </a>
-    </div>
-    <div class="flex place-content-center">
-
-      <button 
-      class="hover:bg-gray-800 bg-yellow-400
-      rounded-3xl text-gray-800 hover:text-yellow-400 font-bold  p-2">
-      <span class="flex mr-2 ml-2">
-        Descarga mi CV <Icon class="ml-2" size={30} name="mdi:file-download"/>
-      </span>
-    </button>
-    </div>
-  </div>
-</div>
